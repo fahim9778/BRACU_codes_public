@@ -9,3 +9,4 @@ Copilot Tests/PrimeNumber
 /.vscode
 .vscode/*
 .idea/*
+.pycache/*
