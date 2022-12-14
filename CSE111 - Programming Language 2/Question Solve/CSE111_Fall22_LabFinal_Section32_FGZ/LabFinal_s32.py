@@ -6,20 +6,17 @@ class Grandfather:
     _title = "Khan"
     __wealth = "1 Crore"
 
-
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-
     def display(self):
-        print(f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I have {self.__wealth} in my bank account.")
-
+        print(
+            f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I have {self.__wealth} in my bank account.")
 
     @classmethod
     def display_title(cls):
         print(f"My title is {cls._title}")
-
 
     @classmethod
     def display_wealth(cls):
@@ -39,23 +36,23 @@ class Father(Grandfather):
         self.eye = "Brown"
 
     def display(self):
-        print(f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I income {self.salary} per month.")
+        print(
+            f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I income {self.salary} per month.")
         print(f"I have {self.hair} hair and {self.eye} eyes.")
 
 
 # Implement the Mother class as instructed in the question paper
 
 class Mother:
-    #INDENT YOUR FIRST LINE OF CODE ALIGNING JUST BELOW THIS COMMENT, otherwise you will get indentation error
-    ##HIDE
     def __init__(self, name, age):
         self.name = name
         self.age = age
         self.hair = "Red"
         self.eye = "Blue"
-    
+
     def display(self):
         print(f"My name is {self.name} and I am {self.age} years old. I have {self.hair} hair and {self.eye} eyes.")
+
 
 class Son(Father, Mother):
     def __init__(self, name, age, salary, tech):
@@ -65,6 +62,7 @@ class Son(Father, Mother):
     def display(self):
         super().display()
         print(f"I have hobby for {self.tech}.")
+
 
 class Daughter(Mother, Father):
     def __init__(self, name, age, hobby):
