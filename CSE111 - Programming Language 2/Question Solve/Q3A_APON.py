@@ -1,3 +1,5 @@
+# Public URL (for your students): https://codecheck.io/files/2212150557argma1syqznqkm894fbdewd0g
+# Edit URL (for you only): https://codecheck.io/private/problem/2212150557argma1syqznqkm894fbdewd0g/BUTVNG88NS45B9Q8R2C2ERIW8
 class Match:
     __ID = 0
     __matchDetails = {}
@@ -52,7 +54,7 @@ class Match:
 
 m1 = Match("USA", "Wales", 1 ,1)
 m2 = Match("Wales", "Iran", 0, 2)
-Match.printTeamList()
+Match.printTeamList() # prints sorted list of team names
 print("=====================================")
 m3 = Match("England", "USA")
 m4 = Match("USA", "Iran", 1)
@@ -67,5 +69,5 @@ print(m2.getGoals())
 print("=====================================")
 print(Match.isTie(*m3.getGoals()))
 print(Match.isTie(*m4.getGoals()))
-Match.printTeamList()
+Match.printTeamList() # prints sorted list of team names
 print("=====================================")
