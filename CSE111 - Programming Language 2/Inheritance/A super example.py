@@ -16,6 +16,13 @@ class Child(Parent):
         print(f"Age: {self.age}")
         print(f"school : {self.school}")
 
+    @classmethod
+    def print_class_details(cls):
+        print(f"Class Name : {cls.__name__}")
+        print(f"Class Doc : {cls.__doc__}")
+        print(f"Class Module : {cls.__module__}")
+        print(f"Class Base : {cls.__bases__}")
+
 
 class Grandchild(Child):
     def __init__(self, g_name, g_age, g_school, g_pet):
