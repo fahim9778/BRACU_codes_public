@@ -12,10 +12,10 @@ class AlibiInvestigator:
         self.checked_alibis = {}
 
     def is_fabricated(self, alibi):
+        alibi = alibi.replace(" ", "").replace(",", "").replace(".", "").replace("!", "").replace("?", "").replace("'", "").replace('"', "").lower()
         if alibi in self.checked_alibis:
             return self.checked_alibis[alibi]
-        # Remove punctuatio marks and spaces using replace() method and convert to lowercase using lower() method
-        alibi = alibi.replace(" ", "").replace(",", "").replace(".", "").replace("!", "").replace("?", "").replace("'", "").replace('"', "").lower()
+        # Remove punctuation marks and spaces using replace() method and convert to lowercase using lower() method
         if self.is_palindrome(alibi):
             self.checked_alibis[alibi] = True
             return True
