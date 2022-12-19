@@ -1,4 +1,4 @@
-from LabFinal_s32 import *
+from LabFinal_s32_setA import *
 
 g1 = Grandfather("Azmir Khan", 45)
 g1.display()
