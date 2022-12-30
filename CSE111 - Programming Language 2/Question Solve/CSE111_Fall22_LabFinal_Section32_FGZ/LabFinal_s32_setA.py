@@ -2,6 +2,8 @@
 
 # Public URL (for your students): https://codecheck.io/files/2212140659817p9no1b28j4cjqttgqz5a23
 # Edit URL (for you only): https://codecheck.io/private/problem/2212140659817p9no1b28j4cjqttgqz5a23/ANDVD00Q92KSF9N3T3HUBOP17
+
+# Question Link: https://codecheck.io/private/assignment/2212191350d8j0khg4odtbhevvuxo9f6ga6/A45H1WP0J1VP2QHLC0FH4UKC2
 class Grandfather:
     _title = "Khan"
     __wealth = "1 Crore"
@@ -11,8 +13,7 @@ class Grandfather:
         self.age = age
 
     def display(self):
-        print(
-            f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I have {self.__wealth} in my bank account.")
+        print(f"My name is {self.name} and I am {self.age} years old. My title is {self._title} and I have {self.__wealth} in my bank account.")
 
     @classmethod
     def display_title(cls):
